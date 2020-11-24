@@ -38,14 +38,13 @@ def threaded_player(conn, p, gameID):
                 else:
                     if data == "reset":
                         game.reset()
-                    elif data == "update":
-                        game.update()
                     elif data != "get":
                         pos = str.split(",")
                         game.select(int(pos[0]), int(pos[1]))
                         game.change_turn(p)
 
-                    conn.sendall(pickle.dumps(game))
+                    reply = game
+                    conn.sendall(pickle.dumps(reply))
             else:
                 break
         except:

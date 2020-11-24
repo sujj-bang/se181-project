@@ -25,7 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="reformat files">
+    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="connecting game to server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkers/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606190797520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="connecting game to server">
+      <created>1606199783117</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606199783117</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +210,8 @@
     <MESSAGE value="server and network started" />
     <MESSAGE value="minor required files to run" />
     <MESSAGE value="reformat files" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformat files" />
+    <MESSAGE value="connecting game to server" />
+    <option name="LAST_COMMIT_MESSAGE" value="connecting game to server" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="97" key="#Inspections" timestamp="1606197805320">
@@ -218,22 +226,22 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="508" y="193" key="FileChooserDialogImpl/0.25.1440.820@0.25.1440.820" timestamp="1606185614155" />
-    <state width="897" height="197" key="GridCell.Tab.0.bottom" timestamp="1606199571674">
+    <state width="897" height="197" key="GridCell.Tab.0.bottom" timestamp="1606244638492">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606199571674" />
-    <state width="897" height="197" key="GridCell.Tab.0.center" timestamp="1606199571673">
+    <state width="897" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606244638492" />
+    <state width="897" height="197" key="GridCell.Tab.0.center" timestamp="1606244638491">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606199571673" />
-    <state width="897" height="197" key="GridCell.Tab.0.left" timestamp="1606199571672">
+    <state width="897" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606244638491" />
+    <state width="897" height="197" key="GridCell.Tab.0.left" timestamp="1606244638491">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606199571672" />
-    <state width="897" height="197" key="GridCell.Tab.0.right" timestamp="1606199571674">
+    <state width="897" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606244638491" />
+    <state width="897" height="197" key="GridCell.Tab.0.right" timestamp="1606244638492">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606199571674" />
+    <state width="897" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606244638492" />
     <state width="1379" height="244" key="GridCell.Tab.1.bottom" timestamp="1606189156554">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
@@ -254,9 +262,9 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1606189078758" />
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606190799401">
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606199785839">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606190799401" />
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606199785839" />
   </component>
 </project>

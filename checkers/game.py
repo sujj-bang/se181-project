@@ -5,13 +5,12 @@ from checkers.board import Board
 
 class Game:
 
-    def __init__(self, gameID):
+    def __init__(self, id):
+        self.ready = False
+        self.id = id
+        self._init()
         self.win = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption('checkers')
-        self.ready = False
-        self.id = gameID
-        self._init()
-
 
     def update(self):
         self.board.draw(self.win)
@@ -59,7 +58,7 @@ class Game:
             skipped = self.valid_moves[(row, col)]
             if skipped:
                 self.board.remove(skipped)
-            # self.change_turn(self.turn)
+            # self.change_turn()
 
         else:
             return False
@@ -72,11 +71,11 @@ class Game:
             pygame.draw.circle(self.win, BLUE,
                                (col * SQUARE_SIZE + SQUARE_SIZE // 2, row * SQUARE_SIZE + SQUARE_SIZE // 2), 15)
 
-    def change_turn(self, player):
+    def change_turn(self, who):
         self.valid_moves = []
-        if player == 0:
+        if who == 0:
             self.p1_turn = False
-            self.turn = self.p2
+            self.turn = WHITE
             self.p2_turn = True
         else:
             self.p2_turn = False
