@@ -1,5 +1,6 @@
 import socket
 from _thread import *
+from checkers.game import Game
 import sys
 import pickle
 
@@ -16,33 +17,63 @@ except socket.error as e:
 s.listen(2)
 print("Server Started, Waiting for Connection")
 
+connected = set()
+games = {}
+idNum = 0
 
-def threaded_client(conn):
-    conn.send(str.encode("Connected"))
-    reply = ""  # soon to be changed to checkers object instead of string
+
+def threaded_player(conn, p, gameID):
+    global idNum
+    conn.send(str.encode(str(p)))
+    reply = ""
 
     while True:
         try:
-            data = conn.recv(2048)
-            reply = data.decode("utf-8")
+            data = conn.recv(4096).decode()
+            if gameID in games:
+                game = games[gameID]
 
-            if not data:
-                print("Disconnected")
-                break
+                if not data:
+                    break
+                else:
+                    if data == "reset":
+                        game.reset()
+                    elif data == "update":
+                        game.update()
+                    elif data != "get":
+                        pos = str.split(",")
+                        game.select(int(pos[0]), int(pos[1]))
+                        game.change_turn(p)
+
+                    conn.sendall(pickle.dumps(game))
             else:
-                print("Received : ", reply)
-                print("Sending : ", reply)
-
-            conn.sendall(str.encode(reply))
+                break
         except:
             break
 
     print("Connection Stopped")
-    conn.close()
+    try:
+        del games[gameID]
+        print("Closing Game ", gameID)
+    except:
+        pass
+    idNum -= 1
+    conn.clos()
 
 
 while True:
     conn, addr = s.accept()
     print("Connected to : ", addr)
 
-    start_new_thread(threaded_client, (conn,))
+    idNum += 1
+    p = 0
+    gameID = (idNum - 1) // 2
+
+    if idNum % 2 == 1:
+        games[gameID] = Game(gameID)
+        print("Creating a new game, waiting for another player to join...")
+    else:
+        games[gameID].ready = True
+        p = 1
+
+    start_new_thread(threaded_player, (conn, p, gameID))

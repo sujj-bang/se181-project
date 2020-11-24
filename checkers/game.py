@@ -5,9 +5,13 @@ from checkers.board import Board
 
 class Game:
 
-    def __init__(self, win):
+    def __init__(self, gameID):
+        self.win = pygame.display.set_mode((WIDTH, HEIGHT))
+        pygame.display.set_caption('checkers')
+        self.ready = False
+        self.id = gameID
         self._init()
-        self.win = win
+
 
     def update(self):
         self.board.draw(self.win)
@@ -15,9 +19,13 @@ class Game:
         pygame.display.update()
 
     def _init(self):
+        self.p1 = RED
+        self.p2 = WHITE
+        self.p1_turn = True
+        self.p2_turn = False
         self.selected = None
         self.board = Board()
-        self.turn = RED
+        self.turn = self.p1
         self.valid_moves = {}
 
     def reset(self):
@@ -37,7 +45,12 @@ class Game:
             return True
 
     def winner(self):
-        return self.board.winner()
+        if self.board.winner() == self.p1:
+            return self.p1
+        elif self.board.winner() == self.p2:
+            return self.p2
+        else:
+            return self.board.winner()
 
     def _move(self, row, col):
         piece = self.board.get_piece(row, col)
@@ -46,7 +59,7 @@ class Game:
             skipped = self.valid_moves[(row, col)]
             if skipped:
                 self.board.remove(skipped)
-            self.change_turn()
+            # self.change_turn(self.turn)
 
         else:
             return False
@@ -59,9 +72,16 @@ class Game:
             pygame.draw.circle(self.win, BLUE,
                                (col * SQUARE_SIZE + SQUARE_SIZE // 2, row * SQUARE_SIZE + SQUARE_SIZE // 2), 15)
 
-    def change_turn(self):
+    def change_turn(self, player):
         self.valid_moves = []
-        if self.turn == RED:
-            self.turn = WHITE
+        if player == 0:
+            self.p1_turn = False
+            self.turn = self.p2
+            self.p2_turn = True
         else:
-            self.turn = RED
+            self.p2_turn = False
+            self.turn = self.p1
+            self.p1_turn = True
+
+    def connected(self):
+        return self.ready

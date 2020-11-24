@@ -6,9 +6,6 @@ from checkers.game import Game
 
 FPS = 60
 
-WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('checkers')
-
 
 def get_row_col_from_mouse(pos):
     x, y = pos
@@ -19,14 +16,22 @@ def get_row_col_from_mouse(pos):
 
 def main():
     run = True
-    n = Network()
     clock = pygame.time.Clock()
-    game = Game(WIN)
+    n = Network()
+    player = int(n.getP())
+    print("You are player", player+1)
 
     while run:
         clock.tick(FPS)
+        try:
+            game = n.send("get")
+        except:
+            run = False
+            print("Game could not be created")
+            break
+
         # change winning text
-        if game.winner() != None:
+        if game.winner() is not None:
             print(game.winner())
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -35,9 +40,13 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
                 row, col = get_row_col_from_mouse(pos)
-                game.select(row, col)
+                try:
+                    game = n.send(str(row + "," + col))
+                except:
+                    print() # error message for not being able to choose a position
 
-        game.update()
+        game.update() # changes this so game = n.send("update")
+
     pygame.quit()
 
 
