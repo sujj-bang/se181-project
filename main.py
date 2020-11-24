@@ -1,27 +1,31 @@
 import pygame
+from network import Network
 from checkers.constants import *
 from checkers.board import *
 from checkers.game import Game
+
 FPS = 60
 
-WIN = pygame.display.set_mode((WIDTH,HEIGHT))
+WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('checkers')
 
+
 def get_row_col_from_mouse(pos):
-    x,y = pos
+    x, y = pos
     row = y // SQUARE_SIZE
     col = x // SQUARE_SIZE
-    return row,col
+    return row, col
+
 
 def main():
     run = True
+    n = Network()
     clock = pygame.time.Clock()
     game = Game(WIN)
-    
-    
+
     while run:
         clock.tick(FPS)
-        #change winning text
+        # change winning text
         if game.winner() != None:
             print(game.winner())
         for event in pygame.event.get():
@@ -30,11 +34,11 @@ def main():
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
-                row,col = get_row_col_from_mouse(pos)
-                game.select(row,col)
-                
-                
+                row, col = get_row_col_from_mouse(pos)
+                game.select(row, col)
+
         game.update()
     pygame.quit()
-    
+
+
 main()
