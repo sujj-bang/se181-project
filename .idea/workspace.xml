@@ -25,7 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="fixed singleplayer to run without any pygame in Games, did not fix server yet." />
+    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606421882892</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="workspace.xml">
+      <created>1606429617244</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606429617244</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +261,8 @@
     <MESSAGE value="connecting game to server" />
     <MESSAGE value="workspace for new branch" />
     <MESSAGE value="fixed singleplayer to run without any pygame in Games, did not fix server yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed singleplayer to run without any pygame in Games, did not fix server yet." />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="97" key="#Inspections" timestamp="1606197805320">
@@ -301,10 +313,10 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1606417857056" />
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606421884751">
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606429618791">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606421884751" />
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606429618791" />
     <state x="260" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606416995958">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
