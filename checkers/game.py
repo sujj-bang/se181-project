@@ -1,21 +1,18 @@
-import pygame
 from checkers.constants import *
 from checkers.board import Board
 
 
 class Game:
 
-    def __init__(self, id):
-        self.ready = False
-        self.id = id
+    def __init__(self):
+        # self.ready = False
+        # self.id = id
         self._init()
-        self.win = pygame.display.set_mode((WIDTH, HEIGHT))
-        pygame.display.set_caption('checkers')
 
     def update(self):
-        self.board.draw(self.win)
-        self.draw_valid_moves(self.valid_moves)
-        pygame.display.update()
+        self.board.draw()
+        self.board.draw_valid_moves(self.valid_moves)
+        self.board.update()
 
     def _init(self):
         self.p1 = RED
@@ -58,22 +55,16 @@ class Game:
             skipped = self.valid_moves[(row, col)]
             if skipped:
                 self.board.remove(skipped)
-            # self.change_turn()
+            self.change_turn()
 
         else:
             return False
 
         return True
 
-    def draw_valid_moves(self, moves):
-        for move in moves:
-            row, col = move
-            pygame.draw.circle(self.win, BLUE,
-                               (col * SQUARE_SIZE + SQUARE_SIZE // 2, row * SQUARE_SIZE + SQUARE_SIZE // 2), 15)
-
-    def change_turn(self, who):
+    def change_turn(self):
         self.valid_moves = []
-        if who == 0:
+        if self.turn == self.p1:
             self.p1_turn = False
             self.turn = WHITE
             self.p2_turn = True
@@ -82,5 +73,7 @@ class Game:
             self.turn = self.p1
             self.p1_turn = True
 
+    """
     def connected(self):
         return self.ready
+    """

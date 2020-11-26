@@ -20,17 +20,16 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Sujin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:fixServer" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="connecting game to server">
+    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="workspace for new branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkers/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkers/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +84,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="menu" type="PythonConfigurationType" factoryName="Python">
+      <module name="se181-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="network" type="PythonConfigurationType" factoryName="Python">
       <module name="se181-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,6 +149,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.menu" />
       <item itemvalue="Python.server" />
       <item itemvalue="Python.network" />
     </list>
@@ -177,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606199783117</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="workspace for new branch">
+      <created>1606246235421</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606246235421</updated>
+    </task>
+    <task id="LOCAL-00007" summary="workspace for new branch">
+      <created>1606417026289</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606417026289</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,7 +227,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Sujin" />
+                        <option value="fixServer" />
                       </list>
                     </value>
                   </entry>
@@ -211,37 +246,38 @@
     <MESSAGE value="minor required files to run" />
     <MESSAGE value="reformat files" />
     <MESSAGE value="connecting game to server" />
-    <option name="LAST_COMMIT_MESSAGE" value="connecting game to server" />
+    <MESSAGE value="workspace for new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace for new branch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="97" key="#Inspections" timestamp="1606197805320">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="93" y="97" key="#Inspections/0.25.1440.820@0.25.1440.820" timestamp="1606197805320" />
-    <state x="184" y="91" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606186202637">
+    <state x="184" y="67" width="1071" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606417751264">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="184" y="91" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.820@0.25.1440.820" timestamp="1606186202637" />
+    <state x="184" y="67" width="1071" height="778" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.820@0.25.1440.820" timestamp="1606417751264" />
     <state x="508" y="193" key="FileChooserDialogImpl" timestamp="1606185614155">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="508" y="193" key="FileChooserDialogImpl/0.25.1440.820@0.25.1440.820" timestamp="1606185614155" />
-    <state width="897" height="197" key="GridCell.Tab.0.bottom" timestamp="1606244638492">
+    <state width="901" height="197" key="GridCell.Tab.0.bottom" timestamp="1606421344609">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606244638492" />
-    <state width="897" height="197" key="GridCell.Tab.0.center" timestamp="1606244638491">
+    <state width="901" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606421344609" />
+    <state width="901" height="197" key="GridCell.Tab.0.center" timestamp="1606421344608">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606244638491" />
-    <state width="897" height="197" key="GridCell.Tab.0.left" timestamp="1606244638491">
+    <state width="901" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606421344608" />
+    <state width="901" height="197" key="GridCell.Tab.0.left" timestamp="1606421344607">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606244638491" />
-    <state width="897" height="197" key="GridCell.Tab.0.right" timestamp="1606244638492">
+    <state width="901" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606421344607" />
+    <state width="901" height="197" key="GridCell.Tab.0.right" timestamp="1606421344608">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="897" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606244638492" />
+    <state width="901" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606421344608" />
     <state width="1379" height="244" key="GridCell.Tab.1.bottom" timestamp="1606189156554">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
@@ -258,13 +294,17 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state width="1379" height="244" key="GridCell.Tab.1.right/0.25.1440.820@0.25.1440.820" timestamp="1606189156554" />
-    <state x="229" y="71" key="SettingsEditor" timestamp="1606189078758">
+    <state x="229" y="71" key="SettingsEditor" timestamp="1606417857056">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1606189078758" />
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606199785839">
+    <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1606417857056" />
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606417028098">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606199785839" />
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606417028098" />
+    <state x="260" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606416995958">
+      <screen x="0" y="25" width="1440" height="820" />
+    </state>
+    <state x="260" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.820@0.25.1440.820" timestamp="1606416995958" />
   </component>
 </project>
