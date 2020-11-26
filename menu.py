@@ -5,7 +5,7 @@ import pygame_menu
 
 pygame.init()
 os.environ['SDL_VIDEO_CENTERED'] = '1'
-surface = pygame.display.set_mode((600, 400))
+surface = pygame.display.set_mode((800, 600))
 
 
 def set_difficulty(selected, value):
@@ -21,17 +21,23 @@ def start_the_game():
     here menu can be disabled, etc.
     """
     print('Run main?')
- #   execfile('main.py')
+#    execfile('main.py')
 
 
-menu = pygame_menu.Menu(height=300,
-                        width=400,
+def show_credits():
+
+    print("Display Credits")
+
+
+menu = pygame_menu.Menu(height=600,
+                        width=800,
                         theme=pygame_menu.themes.THEME_DARK,
                         title='Welcome')
 
-menu.add_text_input('Name: ', default='John Doe')
-menu.add_selector('Difficulty: ', [('Hard', 1), ('Easy', 2)], onchange=set_difficulty)
+menu.add_text_input('Name: ', default='Enter Name Here')
+menu.add_selector('Game Mode: ', [('Single Player', 1), ('Multiplayer', 2)], onchange=set_difficulty)
 menu.add_button('Play', start_the_game)
+menu.add_button('Credits', show_credits)
 menu.add_button('Quit', pygame_menu.events.EXIT)
 
 if __name__ == '__main__':
