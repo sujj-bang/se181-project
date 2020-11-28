@@ -149,8 +149,8 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.menu" />
-      <item itemvalue="Python.server" />
       <item itemvalue="Python.network" />
+      <item itemvalue="Python.server" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -285,22 +285,22 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="508" y="193" key="FileChooserDialogImpl/0.25.1440.820@0.25.1440.820" timestamp="1606185614155" />
-    <state width="1056" height="197" key="GridCell.Tab.0.bottom" timestamp="1606587296167">
+    <state width="747" height="197" key="GridCell.Tab.0.bottom" timestamp="1606599219572">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="1056" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606587296167" />
-    <state width="1056" height="197" key="GridCell.Tab.0.center" timestamp="1606587296166">
+    <state width="747" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606599219572" />
+    <state width="747" height="197" key="GridCell.Tab.0.center" timestamp="1606599219572">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="1056" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606587296166" />
-    <state width="1056" height="197" key="GridCell.Tab.0.left" timestamp="1606587296166">
+    <state width="747" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606599219572" />
+    <state width="747" height="197" key="GridCell.Tab.0.left" timestamp="1606599219571">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="1056" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606587296166" />
-    <state width="1056" height="197" key="GridCell.Tab.0.right" timestamp="1606587296167">
+    <state width="747" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606599219571" />
+    <state width="747" height="197" key="GridCell.Tab.0.right" timestamp="1606599219572">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="1056" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606587296167" />
+    <state width="747" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606599219572" />
     <state width="1379" height="244" key="GridCell.Tab.1.bottom" timestamp="1606189156554">
       <screen x="0" y="25" width="1440" height="820" />
     </state>

@@ -49,12 +49,12 @@ def run():
                 # game.select(row, col)
                 if game.connected():
                     try:
-                        n.send(str.encode(row + "," + col))
+                        game = n.send(str.encode(row + "," + col))
                     except:
                         print("could not send selected position")
 
         try:
-            n.send("update")
+            game = n.send("update")
         except:
             print("could not update window")
 

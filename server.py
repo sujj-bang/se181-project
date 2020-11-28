@@ -43,8 +43,7 @@ def threaded_player(conn, p, gameID):
                         game.select(int(pos[0]), int(pos[1]))
                         game.change_turn(p)
 
-                    reply = game
-                    conn.sendall(pickle.dumps(reply))
+                    conn.sendall(pickle.dumps(game))
             else:
                 break
         except:
