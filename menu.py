@@ -3,6 +3,8 @@ import pygame
 import pygame_menu
 #import main
 from main import run
+import credits
+from pygame.locals import *
 
 pygame.init()
 os.environ['SDL_VIDEO_CENTERED'] = '1'
@@ -29,6 +31,7 @@ def start_the_game():
 def show_credits():
 
     print("Display Credits")
+#    execfile('credits.py')
 
 
 menu = pygame_menu.Menu(height=600,
