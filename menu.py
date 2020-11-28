@@ -15,7 +15,7 @@ def set_difficulty(selected, value):
     """
     Set the difficulty of the game.
     """
-    print('Set difficulty to {} ({})'.format(selected[0], value))
+    print('Set game mode to {} ({})'.format(selected[0], value))
 
 
 def start_the_game():
