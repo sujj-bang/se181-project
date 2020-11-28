@@ -8,7 +8,7 @@ screen_r = screen.get_rect()
 font = pygame.font.SysFont("Arial", 40)
 clock = pygame.time.Clock()
 
-def main():
+def credits():
 
     credit_list = ["CREDITS - Checkers"," ","Aman Kartha","Basil Khan", "Kiara de Leon", "Su Jin Bang", "Yi Yang"]
 
@@ -46,5 +46,3 @@ def main():
         # cap framerate at 60 FPS
         clock.tick(60)
 
-if __name__ == '__main__':
-    main()
