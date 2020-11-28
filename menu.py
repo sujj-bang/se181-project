@@ -2,6 +2,7 @@ import os
 import pygame
 import pygame_menu
 #import main
+from main import run
 
 pygame.init()
 os.environ['SDL_VIDEO_CENTERED'] = '1'
@@ -21,6 +22,7 @@ def start_the_game():
     here menu can be disabled, etc.
     """
     print('Run main?')
+    run()
 #    execfile('main.py')
 
 

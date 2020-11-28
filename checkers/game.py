@@ -42,9 +42,9 @@ class Game:
 
     def winner(self):
         if self.board.winner() == self.p1:
-            return self.p1
+            return "RED IS THE WINNER!"
         elif self.board.winner() == self.p2:
-            return self.p2
+            return "WHITE IS THE WINNER!"
         else:
             return self.board.winner()
 
