@@ -4,9 +4,9 @@ from checkers.board import Board
 
 class Game:
 
-    def __init__(self):
-        # self.ready = False
-        # self.id = id
+    def __init__(self, id):
+        self.ready = False
+        self.id = id
         self._init()
 
     def update(self):
@@ -55,16 +55,16 @@ class Game:
             skipped = self.valid_moves[(row, col)]
             if skipped:
                 self.board.remove(skipped)
-            self.change_turn()
+            # self.change_turn()
 
         else:
             return False
 
         return True
 
-    def change_turn(self):
+    def change_turn(self, who):
         self.valid_moves = []
-        if self.turn == self.p1:
+        if who == 0:
             self.p1_turn = False
             self.turn = WHITE
             self.p2_turn = True
@@ -73,7 +73,5 @@ class Game:
             self.turn = self.p1
             self.p1_turn = True
 
-    """
     def connected(self):
         return self.ready
-    """

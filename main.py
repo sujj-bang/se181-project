@@ -1,5 +1,5 @@
 import pygame
-# from network import Network
+from network import Network
 from checkers.constants import *
 from checkers.board import *
 from checkers.game import Game
@@ -20,21 +20,21 @@ def get_row_col_from_mouse(pos):
 def main():
     run = True
     clock = pygame.time.Clock()
-    game = Game()
-    # n = Network()
-    # player = int(n.getP())
-    # print("You are player ", player+1)
+    # game = Game()
+    n = Network()
+    player = int(n.getP())
+    print("You are player ", player+1)
 
     while run:
         clock.tick(FPS)
-        """
+
         try:
             game = n.send("get")
         except:
             run = False
             print("Game could not be fetched")
             break
-        """
+
         # change winning text
         if game.winner() is not None:
             print(game.winner())
@@ -46,11 +46,19 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
                 row, col = get_row_col_from_mouse(pos)
-                game.select(row, col)
-                # if game.connect():
-                #    n.send(str.encode(row + "," + col))
+                # game.select(row, col)
+                if game.connected():
+                    try:
+                        n.send(str.encode(row + "," + col))
+                    except:
+                        print("could not send selected position")
 
-        game.update()
+        try:
+            n.send("update")
+        except:
+            print("could not update window")
+
+
     pygame.quit()
 
 

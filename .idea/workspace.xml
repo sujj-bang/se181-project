@@ -25,10 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="workspace.xml">
+    <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="set server as localhost">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkers/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606429617244</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="set server as localhost">
+      <created>1606430108662</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606430108662</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,7 +269,8 @@
     <MESSAGE value="workspace for new branch" />
     <MESSAGE value="fixed singleplayer to run without any pygame in Games, did not fix server yet." />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="set server as localhost" />
+    <option name="LAST_COMMIT_MESSAGE" value="set server as localhost" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="97" key="#Inspections" timestamp="1606197805320">
@@ -277,22 +285,22 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="508" y="193" key="FileChooserDialogImpl/0.25.1440.820@0.25.1440.820" timestamp="1606185614155" />
-    <state width="901" height="197" key="GridCell.Tab.0.bottom" timestamp="1606426700914">
+    <state width="901" height="197" key="GridCell.Tab.0.bottom" timestamp="1606430839550">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606426700914" />
-    <state width="901" height="197" key="GridCell.Tab.0.center" timestamp="1606426700913">
+    <state width="901" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606430839550" />
+    <state width="901" height="197" key="GridCell.Tab.0.center" timestamp="1606430839549">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606426700913" />
-    <state width="901" height="197" key="GridCell.Tab.0.left" timestamp="1606426700912">
+    <state width="901" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606430839549" />
+    <state width="901" height="197" key="GridCell.Tab.0.left" timestamp="1606430839549">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606426700912" />
-    <state width="901" height="197" key="GridCell.Tab.0.right" timestamp="1606426700913">
+    <state width="901" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606430839549" />
+    <state width="901" height="197" key="GridCell.Tab.0.right" timestamp="1606430839550">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606426700913" />
+    <state width="901" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606430839550" />
     <state width="1379" height="244" key="GridCell.Tab.1.bottom" timestamp="1606189156554">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
@@ -313,10 +321,10 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1606417857056" />
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606429618791">
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606430109881">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606429618791" />
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606430109881" />
     <state x="260" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606416995958">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
