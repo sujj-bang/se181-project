@@ -4,7 +4,7 @@ from checkers.game import Game
 import sys
 import pickle
 
-server = "10.0.0.209"  # server ip address to be added
+server = "localhost"  # server ip address to be added
 port = 5555  # used a port number that is not used to anything
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
