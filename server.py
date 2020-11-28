@@ -57,7 +57,7 @@ def threaded_player(conn, p, gameID):
     except:
         pass
     idNum -= 1
-    conn.clos()
+    conn.close()
 
 
 while True:

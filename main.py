@@ -2,7 +2,7 @@ import pygame
 from network import Network
 from checkers.constants import *
 from checkers.board import *
-from checkers.game import Game
+# from checkers.game import Game
 
 FPS = 60
 

@@ -20,15 +20,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:fixServer" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="set server as localhost">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkers/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <recent name="$PROJECT_DIR$/.." />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.menu">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
       <module name="se181-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -247,7 +247,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="fixServer" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -285,22 +285,22 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="508" y="193" key="FileChooserDialogImpl/0.25.1440.820@0.25.1440.820" timestamp="1606185614155" />
-    <state width="901" height="197" key="GridCell.Tab.0.bottom" timestamp="1606430839550">
+    <state width="1056" height="197" key="GridCell.Tab.0.bottom" timestamp="1606587296167">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606430839550" />
-    <state width="901" height="197" key="GridCell.Tab.0.center" timestamp="1606430839549">
+    <state width="1056" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606587296167" />
+    <state width="1056" height="197" key="GridCell.Tab.0.center" timestamp="1606587296166">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606430839549" />
-    <state width="901" height="197" key="GridCell.Tab.0.left" timestamp="1606430839549">
+    <state width="1056" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606587296166" />
+    <state width="1056" height="197" key="GridCell.Tab.0.left" timestamp="1606587296166">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606430839549" />
-    <state width="901" height="197" key="GridCell.Tab.0.right" timestamp="1606430839550">
+    <state width="1056" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606587296166" />
+    <state width="1056" height="197" key="GridCell.Tab.0.right" timestamp="1606587296167">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="901" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606430839550" />
+    <state width="1056" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606587296167" />
     <state width="1379" height="244" key="GridCell.Tab.1.bottom" timestamp="1606189156554">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
