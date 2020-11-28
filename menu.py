@@ -6,6 +6,7 @@ from main import run
 from credits import credits
 
 
+pygame.display.set_caption('Checkers')
 pygame.init()
 os.environ['SDL_VIDEO_CENTERED'] = '1'
 surface = pygame.display.set_mode((800, 600))
