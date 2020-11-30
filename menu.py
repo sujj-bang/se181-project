@@ -8,6 +8,7 @@ from credits import credits
 pygame.init()
 os.environ['SDL_VIDEO_CENTERED'] = '1'
 surface = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Checkers Menu")
 
 
 def set_difficulty(selected, value):
@@ -22,9 +23,7 @@ def start_the_game():
     Function that starts a game. This is raised by the menu button,
     here menu can be disabled, etc.
     """
-    print('Run main?')
-    # pygame.display.quit()
-    # pygame.quit()
+    print('Running main')
     run()
 
 
@@ -39,10 +38,10 @@ def show_credits():
 #    execfile('credits.py')
 
 
-menu = pygame_menu.Menu(height=600,
-                        width=800,
+menu = pygame_menu.Menu(height=HEIGHT,
+                        width=WIDTH,
                         theme=pygame_menu.themes.THEME_DARK,
-                        title='Welcome')
+                        title='Welcome to Checkers')
 
 menu.add_text_input('Name: ', default='Enter Name Here')
 menu.add_button('Play', start_the_game)

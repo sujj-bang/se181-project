@@ -20,15 +20,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:experiment" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="set server as localhost">
-      <change afterPath="$PROJECT_DIR$/checkersbg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credits.py" beforeDir="false" afterPath="$PROJECT_DIR$/credits.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +257,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="experiment" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -298,22 +297,22 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state x="508" y="193" key="FileChooserDialogImpl/0.25.1440.820@0.25.1440.820" timestamp="1606185614155" />
-    <state width="747" height="197" key="GridCell.Tab.0.bottom" timestamp="1606599219572">
+    <state width="780" height="239" key="GridCell.Tab.0.bottom" timestamp="1606742884226">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="747" height="197" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606599219572" />
-    <state width="747" height="197" key="GridCell.Tab.0.center" timestamp="1606599219572">
+    <state width="780" height="239" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1606742884226" />
+    <state width="780" height="239" key="GridCell.Tab.0.center" timestamp="1606742884225">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="747" height="197" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606599219572" />
-    <state width="747" height="197" key="GridCell.Tab.0.left" timestamp="1606599219571">
+    <state width="780" height="239" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1606742884225" />
+    <state width="780" height="239" key="GridCell.Tab.0.left" timestamp="1606742884225">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="747" height="197" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606599219571" />
-    <state width="747" height="197" key="GridCell.Tab.0.right" timestamp="1606599219572">
+    <state width="780" height="239" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1606742884225" />
+    <state width="780" height="239" key="GridCell.Tab.0.right" timestamp="1606742884226">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state width="747" height="197" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606599219572" />
+    <state width="780" height="239" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1606742884226" />
     <state width="1379" height="244" key="GridCell.Tab.1.bottom" timestamp="1606189156554">
       <screen x="0" y="25" width="1440" height="820" />
     </state>

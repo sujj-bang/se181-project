@@ -1,9 +1,10 @@
 import pygame
+from checkers.constants import WIDTH, HEIGHT
 from pygame.locals import *
 
 pygame.init()
 pygame.display.set_caption('End credits')
-screen = pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
 screen_r = screen.get_rect()
 font = pygame.font.SysFont("Arial", 40)
 clock = pygame.time.Clock()
