@@ -26,14 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b593e95-bc7a-486d-ae07-2f88e2a1c724" name="Default Changelist" comment="set server as localhost">
+      <change afterPath="$PROJECT_DIR$/checkersbg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkers/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkers/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkers/piece.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkers/piece.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +47,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1kiZc5aKm9IYAXaZRLwfsfgbIGV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -237,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606430108662</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated working server">
+      <created>1606738370163</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606738370163</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,6 +272,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="server and network started" />
     <MESSAGE value="minor required files to run" />
@@ -275,7 +282,8 @@
     <MESSAGE value="fixed singleplayer to run without any pygame in Games, did not fix server yet." />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="set server as localhost" />
-    <option name="LAST_COMMIT_MESSAGE" value="set server as localhost" />
+    <MESSAGE value="Updated working server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated working server" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="97" key="#Inspections" timestamp="1606197805320">
@@ -322,14 +330,14 @@
       <screen x="0" y="25" width="1440" height="820" />
     </state>
     <state width="1379" height="244" key="GridCell.Tab.1.right/0.25.1440.820@0.25.1440.820" timestamp="1606189156554" />
-    <state x="229" y="71" key="SettingsEditor" timestamp="1606417857056">
+    <state x="229" y="71" key="SettingsEditor" timestamp="1606739442237">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1606417857056" />
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606430109881">
+    <state x="229" y="71" key="SettingsEditor/0.25.1440.820@0.25.1440.820" timestamp="1606739442237" />
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2" timestamp="1606738373829">
       <screen x="0" y="25" width="1440" height="820" />
     </state>
-    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606430109881" />
+    <state x="49" y="152" key="Vcs.Push.Dialog.v2/0.25.1440.820@0.25.1440.820" timestamp="1606738373829" />
     <state x="260" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606416995958">
       <screen x="0" y="25" width="1440" height="820" />
     </state>

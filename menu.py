@@ -1,13 +1,13 @@
 import os
 import pygame
 import pygame_menu
-# import main
-from main import main
+from checkers.constants import WIDTH, HEIGHT
+from main import run
 from credits import credits
 
 pygame.init()
 os.environ['SDL_VIDEO_CENTERED'] = '1'
-surface = pygame.display.set_mode((800, 600))
+surface = pygame.display.set_mode((WIDTH, HEIGHT))
 
 
 def set_difficulty(selected, value):
@@ -23,9 +23,9 @@ def start_the_game():
     here menu can be disabled, etc.
     """
     print('Run main?')
-    pygame.display.quit()
-    pygame.quit()
-    main()
+    # pygame.display.quit()
+    # pygame.quit()
+    run()
 
 
 #    execfile('main.py')

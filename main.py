@@ -6,8 +6,17 @@ from network import Network
 
 FPS = 60
 
+pygame.font.init()
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('checkers')
+
+
+def end_screen(win, text):
+    pygame.font.init()
+    font = pygame.font.SysFont("comicsans", 80)
+    show = font.render(text, True, (255, 255, 255))
+    win.blit(show, (WIDTH / 2 - show.get_width() / 2, 300))
+    pygame.display.update()
 
 
 def get_row_col_from_mouse(pos):
@@ -17,7 +26,7 @@ def get_row_col_from_mouse(pos):
     return row, col
 
 
-def main():
+def run():
     run = True
     clock = pygame.time.Clock()
     game = Game(WIN)
@@ -30,8 +39,13 @@ def main():
     while run:
         clock.tick(FPS)
         # change winning text
-        if game.winner() != None:
-            print(game.winner())
+        winner = game.winner()
+        if winner is not None:
+            if winner == RED:
+                end_screen(WIN, "RED is the Winner!")
+            else:
+                end_screen(WIN, "WHITE is the Winner!")
+            print(winner)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -50,6 +64,3 @@ def main():
         game.setBoard(n.send("giveMe"))
         game.update()
     pygame.quit()
-
-
-main()
