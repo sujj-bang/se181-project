@@ -22,8 +22,13 @@ class Network:
 
     def send(self, data):
         try:
-            self.main.send(str.encode(data))
+            # print("hjerere")
+            # if b :
+            self.main.send(pickle.dumps(data))
+            # else:
+            # self.main.send(str.encode(data))
+            # print("second")
+            # print(self.main.recv())
             return pickle.loads(self.main.recv(4096))
         except socket.error as e:
             print(e)
-

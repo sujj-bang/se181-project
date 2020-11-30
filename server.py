@@ -1,6 +1,8 @@
 import socket
 from _thread import *
-from checkers.game import Game
+from checkers import game
+from checkers.board import Board
+from checkers.constants import RED, WHITE
 import sys
 import pickle
 
@@ -17,45 +19,67 @@ except socket.error as e:
 s.listen(2)
 print("Server Started, Waiting for Connection")
 
-connected = set()
-games = {}
-idNum = 0
+# connected = set()
+
+connected = 0
+p = 0
+turn = RED
+array = Board()
 
 
-def threaded_player(conn, p, gameID):
-    global idNum
+def threaded_player(conn, p):
+    global connected
+    global turn
+    global array
     conn.send(str.encode(str(p)))
+
     reply = ""
 
     while True:
+        print("yes")
         try:
-            data = conn.recv(4096).decode()
-            if gameID in games:
-                game = games[gameID]
 
-                if not data:
-                    break
-                else:
-                    if data == "reset":
-                        game.reset()
-                    elif data != "get":
-                        pos = str.split(",")
-                        game.select(int(pos[0]), int(pos[1]))
-                        game.change_turn(p)
+            data = pickle.loads(conn.recv(4096))
 
-                    conn.sendall(pickle.dumps(game))
-            else:
+            print(data)
+
+            # game = Game()
+
+            if not data:
+                print("here")
                 break
-        except:
+            else:
+
+                if isinstance(data, str) == False:
+                    array = data
+
+                    conn.sendall(pickle.dumps(0))
+
+                if data == "giveMe":
+                    conn.sendall(pickle.dumps(array))
+                if data == "connected":
+                    conn.sendall(pickle.dumps(connected))
+
+                if data == "turn":
+                    conn.sendall(pickle.dumps(turn))
+                if data == "changeTurn":
+                    if turn == RED:
+                        turn = WHITE
+                    elif turn == WHITE:
+                        turn = RED
+                    conn.sendall(pickle.dumps(0))
+
+        except EOFError as e:
+            print(e)
             break
 
     print("Connection Stopped")
     try:
-        del games[gameID]
-        print("Closing Game ", gameID)
+        del game
+        print("Closing Game ")
     except:
         pass
-    idNum -= 1
+    # idNum -= 1
     conn.close()
 
 
@@ -63,15 +87,10 @@ while True:
     conn, addr = s.accept()
     print("Connected to : ", addr)
 
-    idNum += 1
-    p = 0
-    gameID = (idNum - 1) // 2
+    connected += 1
+    p += 1
 
-    if idNum % 2 == 1:
-        games[gameID] = Game(gameID)
-        print("Creating a new game, waiting for another player to join...")
-    else:
-        games[gameID].ready = True
-        p = 1
+    print("Creating a new game, waiting for another player to join...")
+    # games[gameID].ready = True
 
-    start_new_thread(threaded_player, (conn, p, gameID))
+    start_new_thread(threaded_player, (conn, p))
