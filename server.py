@@ -36,7 +36,6 @@ def threaded_player(conn, p):
     reply = ""
 
     while True:
-        print("yes")
         try:
 
             data = pickle.loads(conn.recv(4096))
@@ -46,7 +45,6 @@ def threaded_player(conn, p):
             # game = Game()
 
             if not data:
-                print("here")
                 break
             else:
 
@@ -91,6 +89,5 @@ while True:
     p += 1
 
     print("Creating a new game, waiting for another player to join...")
-    # games[gameID].ready = True
 
     start_new_thread(threaded_player, (conn, p))

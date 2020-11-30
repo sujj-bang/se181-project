@@ -79,7 +79,6 @@ class Game:
     def change_turn(self, n):
         self.valid_moves = []
         blank = n.send("changeTurn")
-        print("changed")
         if self.turn == RED:
             self.turn = WHITE
         else:
