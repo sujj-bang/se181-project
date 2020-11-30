@@ -4,6 +4,7 @@
 
 ### Version 1.0.0 ###
 #### November 30, 2020 ####
+#### Contributors: Su Jin Bang, Kiara de Leon, Aman Kartha, Yi Yang, Basil Khan ####
 _ _ _ _
 
 #### Description: ####
