@@ -1,8 +1,9 @@
 # se181-project #
 
-### Release Notes								                                              November 30, 2020 ###
+### Release Notes	### 
 
 ### Version 1.0.0 ###
+#### November 30, 2020 ####
 _ _ _ _
 
 #### Description: ####
@@ -40,7 +41,7 @@ _ _ _ _
 
 
 #### Out of Scope: ####
-  Once time permits, features listed below may become part of Group 9’s deliverables for future releases:
+  * Once time permits, features listed below may become part of Group 9’s deliverables for future releases:
     * Messaging feature during the game between the two players
     * Utilizing the name feature on the menu screen for the game itself
     * Display of pieces that each player has captured
