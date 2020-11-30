@@ -1,8 +1,8 @@
 import pygame
-from network import Network
 from checkers.constants import *
 from checkers.board import *
-# from checkers.game import Game
+from checkers.game import Game
+from network import Network
 
 FPS = 60
 
@@ -17,49 +17,39 @@ def get_row_col_from_mouse(pos):
     return row, col
 
 
-def run():
+def main():
     run = True
     clock = pygame.time.Clock()
-    # game = Game()
+    game = Game(WIN)
     n = Network()
     player = int(n.getP())
-    print("You are player ", player+1)
+    connected = n.send("connected")
 
+    while connected < 2:
+        connected = n.send("connected")
     while run:
         clock.tick(FPS)
-
-        try:
-            game = n.send("get")
-        except:
-            run = False
-            print("Game could not be fetched")
-            break
-
         # change winning text
-        if game.winner() is not None:
+        if game.winner() != None:
             print(game.winner())
-
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                pos = pygame.mouse.get_pos()
-                row, col = get_row_col_from_mouse(pos)
-                # game.select(row, col)
-                if game.connected():
-                    try:
-                        game = n.send(str.encode(row + "," + col))
-                    except:
-                        print("could not send selected position")
-
-        try:
-            game = n.send("update")
-        except:
-            print("could not update window")
-
-
+            if player == 1 and n.send("turn") == RED or player == 2 and n.send("turn") == WHITE:
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    pos = pygame.mouse.get_pos()
+                    row, col = get_row_col_from_mouse(pos)
+                    game.select(row, col, n)
+                    for row in game.board.board:
+                        for col in row:
+                            if col != 0:
+                                print(col.row, "-", col.col, " ", end="")
+                        print("\n")
+            game.change_turn_n(n.send("turn"))
+            n.send(game.board)
+        game.setBoard(n.send("giveMe"))
+        game.update()
     pygame.quit()
 
 
-#main()
+main()

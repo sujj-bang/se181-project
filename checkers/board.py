@@ -9,17 +9,18 @@ class Board:
         self.red_left = self.white_left = 12
         self.red_kings = self.white_kings = 0
         self.create_board()
-        self.win = pygame.display.set_mode((WIDTH, HEIGHT))
-        pygame.display.set_caption('checkers')
 
     def draw_squares(self, win):
-        self.win.fill(BLACK)
+        win.fill(BLACK)
         for row in range(ROWS):
             for col in range(row % 2, COLS, 2):
                 pygame.draw.rect(win, RED, (row * SQUARE_SIZE, col * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 
     def get_piece(self, row, col):
         return self.board[row][col]
+
+    def set_board(self, board):
+        self.board = board
 
     def create_board(self):
         for row in range(ROWS):
@@ -46,13 +47,13 @@ class Board:
             else:
                 self.red_kings += 1
 
-    def draw(self):
-        self.draw_squares(self.win)
+    def draw(self, win):
+        self.draw_squares(win)
         for row in range(ROWS):
             for col in range(COLS):
                 piece = self.board[row][col]
                 if piece != 0:
-                    piece.draw(self.win)
+                    piece.draw(win)
 
     def get_valid_moves(self, piece):
         moves = {}
@@ -155,11 +156,4 @@ class Board:
 
         return moves
 
-    def draw_valid_moves(self, moves):
-        for move in moves:
-            row, col = move
-            pygame.draw.circle(self.win, BLUE,
-                               (col * SQUARE_SIZE + SQUARE_SIZE // 2, row * SQUARE_SIZE + SQUARE_SIZE // 2), 15)
 
-    def update(self):
-        pygame.display.update()
