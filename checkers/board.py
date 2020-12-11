@@ -19,6 +19,9 @@ class Board:
     def get_piece(self, row, col):
         return self.board[row][col]
 
+    def set_board(self, board):
+        self.board = board
+
     def create_board(self):
         for row in range(ROWS):
             self.board.append([])
@@ -152,3 +155,5 @@ class Board:
             right += 1
 
         return moves
+
+
